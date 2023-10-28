@@ -28,6 +28,12 @@ export function getFeedHtml(){
                             <div>
                                 <p class="handle">${reply.handle}</p>
                                 <p class="tweet-text">${reply.tweetText}</p>
+                                <div class="tweet-details">
+                                    <span class="tweet-detail>
+                                        <i class="fa-solid fa-heart"></i>
+                                        ${reply.likes}
+                                    </span>
+                                </div>
                             </div>
                     </div>
                 </div>
