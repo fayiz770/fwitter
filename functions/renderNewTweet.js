@@ -1,6 +1,5 @@
 import { tweetsData } from '../data.js'
 import { v4 as uuidv4 } from 'https://jspm.dev/uuid'
-import { render } from './render.js'
 
 let inputValue = document.getElementById('text-value')
 
@@ -11,7 +10,7 @@ export  function renderNewTweet(){
             tweetsData.unshift(
                 {
                     handle: `@Waris`,
-                    profilePic: `../images/scrimbalogo.png`,
+                    profilePic: `../images/waris.jpg`,
                     likes: 0,
                     retweets: 0,
                     tweetText: `${inputValue.value}`,

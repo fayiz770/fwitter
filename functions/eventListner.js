@@ -24,7 +24,6 @@ export function eventListner(){
             targetTweet.isLiked = !targetTweet.isLiked
             render()
         }
-
         else if(e.target.dataset.retweet){
 
             let targetTweet = tweetsData.filter((tweet) => {

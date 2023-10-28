@@ -18,6 +18,7 @@ export function getFeedHtml(){
         }
 
         let repliesHtml = ''
+        
         if(tweet.replies.length > 0){
             tweet.replies.forEach((reply) => {
                 repliesHtml += 
@@ -30,7 +31,7 @@ export function getFeedHtml(){
                                 <p class="tweet-text">${reply.tweetText}</p>
                                 <div class="tweet-details">
                                     <span class="tweet-detail>
-                                        <i class="fa-solid fa-heart"></i>
+                                        <i class="fa-${regularClass} fa-heart ${likeIconClass}" data-reply-heart="${reply.uuid}"></i>
                                         ${reply.likes}
                                     </span>
                                 </div>
